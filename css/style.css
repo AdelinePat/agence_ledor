@@ -1,0 +1,25 @@
+/* default value of 1 rem = 16px */
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Rouge Script", cursive; */
+    
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+p {
+    margin-bottom: 0.8rem;
+}
+
+h2, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
