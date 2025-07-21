@@ -10,7 +10,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background: #eee;
-  color: #333:
+  color: #333;
 }
 p {
   margin-bottom: 0.8rem;
@@ -30,22 +30,42 @@ a {
 }
 
 strong {
-    color: #f1c40f;
-    font-weight: 400;
+  color: #f1c40f;
+  font-weight: 400;
 }
 
+em {
+  color: #666;
+}
 
 .mx-20 {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .my-20 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .separator {
-    border-bottom: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.container {
+  display: block;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.bg-dark {
+  background: #333;
+  color: white;
 }
 /* vp + header*/
 
@@ -56,7 +76,6 @@ strong {
 }
 
 header {
-  background: #333;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -100,12 +119,10 @@ header ul {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-
 }
 
 header ul li {
-    padding: 1rem;
-    
+  padding: 1rem;
 }
 
 header ul li a:hover {
@@ -115,84 +132,139 @@ header ul li a:hover {
 /* vp-content */
 
 .vp-content {
-    max-width: 800px;
-    text-align: center;
-    color: white;
+  max-width: 800px;
+  text-align: center;
+  /* color: white; */
 }
 
 .vp-content h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .vp-content p {
-    font-size: 1.8rem;
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
 }
 
 /* offer */
-.container {
-    display: block;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.title {
-    font-weight: 300;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-}
 
 .offer {
-    padding: 10rem 1rem;
+  padding: 5rem 1rem;
 }
 
 .offer-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    /* align-content: ; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* align-content: ; */
 }
 
 .offer-elem {
-    border: 1px solid #ddd;
-    background: white;
-    margin: 1rem;
-    flex: 1;
-    flex-grow: 2;
-    border-radius: 3px;
-    flex-basis: 320px;
-    /* max-width: 400px;
+  border: 1px solid #ddd;
+  background: white;
+  margin: 1rem;
+  flex: 1;
+  flex-grow: 2;
+  border-radius: 3px;
+  flex-basis: 320px;
+  /* max-width: 400px;
     min-width: 300px; */
 }
 
 .offer-elem-img {
-    width: 100%;
-    border-radius: 3px 3px 0px 0px;
+  width: 100%;
+  border-radius: 3px 3px 0px 0px;
 }
 
 .offer-elem-txt {
-    padding: 2rem;
-    text-align: center;
+  padding: 2rem;
+  text-align: center;
 }
 
 .offer-separator {
-    margin: 1rem auto;
-    height: 1px;
-    width: 50px;
-    background: #333;
-
+  margin: 1rem auto;
+  height: 1px;
+  width: 50%;
 }
 
 /* who */
 
-.who-content {
-    display: flex;
-    flex-flow: row nowrap;
+.who {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.who-content-img {
+  flex: 1;
+}
+
+.who-content-txt {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .who-content-img img {
-    width: 100%;
+  width: 100%;
+}
 
+.who-content-txt h2 {
+  font-weight: 500;
+}
+
+.who-content-txt p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+/* testimonials */
+.testimonials {
+  padding: 3rem 1rem;
+}
+
+.testimonials-content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.testimonials-elem {
+  flex: 1;
+  background: white;
+  border-radius: 5px;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.testimonials-elem:nth-child(even) {
+  flex-direction: row;
+}
+
+.testimonials-elem:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.testimonials-elem-txt {
+  padding: 0 2rem;
+}
+
+.testimonials-elem-txt p i {
+  padding: 0.2rem;
+}
+
+.testimonials-elem-profile p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-elem-profile img {
+  width: 50px;
+  border-radius: 25px;
+  margin-bottom: 0.5rem;
 }
